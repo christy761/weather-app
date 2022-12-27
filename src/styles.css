@@ -80,3 +80,23 @@ footer {
 .search-form {
   margin-bottom: 20px;
 }
+
+.search-city-button {
+  background: #61b292;
+  border-color: black;
+  border-radius: 10px;
+}
+
+.search-city-button:hover {
+  background-color: #7c7c7c;
+}
+
+.current-button {
+  background: #a8896c;
+  border-color: black;
+  border-radius: 10px;
+}
+
+.current-button:hover {
+  background-color: #7c7c7c;
+}
