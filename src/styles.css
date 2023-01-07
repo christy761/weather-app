@@ -64,10 +64,10 @@ footer {
   border-radius: 10px;
   max-width: 600px;
 }
-.weather-icon {
-  height: 64px;
-  width: 64px;
-  margin-right: 10px;
+
+.cloud-icon {
+  font-size: 65px;
+  color: #5dacbd;
 }
 
 .temperature {
