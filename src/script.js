@@ -39,6 +39,15 @@ function displayWeatherCondition(response) {
     response.data.condition.description;
 
   celsiusTemperature = response.data.temperature.current;
+
+  document
+    .querySelector("#icon")
+    .setAttribute(
+      "src",
+      `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
+    );
+
+  iconElement.setAttribute("alt", response.data.condition.description);
 }
 
 function searchCity(city) {
