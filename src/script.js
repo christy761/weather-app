@@ -40,13 +40,11 @@ function displayWeatherCondition(response) {
 
   celsiusTemperature = response.data.temperature.current;
 
-  document
-    .querySelector("#icon")
-    .setAttribute(
-      "src",
-      `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
-    );
-
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
+  );
   iconElement.setAttribute("alt", response.data.condition.description);
 }
 
